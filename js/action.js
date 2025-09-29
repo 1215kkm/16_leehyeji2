@@ -1,3 +1,4 @@
+
 // ------------------------------------------------
 // 01. 부드러운 스크롤 (Lenis)
 // ------------------------------------------------
@@ -38,7 +39,7 @@ gsap.timeline({
   scrollTrigger: {
     trigger: ".section1",
     start: "top top",
-    end: "+=1000",
+    end: "+=1300",
     scrub: true,
     onLeave: () => {
       document.querySelector(".graph_box img").src = "images/section2/graph2.png";
@@ -49,7 +50,7 @@ gsap.timeline({
   }
 }).to(".mainImgWrap", {
   marginLeft: -150,
-  top: "132%",
+  top: "145%",
   scale: 0.2,
   rotate: -50
 });
@@ -172,7 +173,7 @@ document.querySelectorAll(".section4 .text").forEach((box) => {
 });
 
 //각 모니터
-document.querySelectorAll(".section4 .one1, .section4 .one2, .section4 .one3, .section4 .one4, .section4 .one5")
+document.querySelectorAll(".section4 .one1, .section4 .one2, .section4 .one3, .section4 .one4, .section4 .one5, .section4 .one6")
   .forEach((oneBox) => {
     let computer = oneBox.querySelector(".computer");
 
@@ -186,7 +187,6 @@ document.querySelectorAll(".section4 .one1, .section4 .one2, .section4 .one3, .s
       });
     }
   });
-
 
 
 
@@ -372,6 +372,12 @@ gsap.timeline({
   top:200,
   autoAlpha:0,
 },'photoImg')
+.from(".photo15 img", {
+  left:300,
+  top:250,
+  autoAlpha:0,
+},'photoImg')
+
 
 
 
@@ -383,3 +389,4 @@ gsap.timeline({
 // }).mouseout(function(){
 //   $(this).find('img').css({top:0})
 // });
+
